@@ -1,0 +1,65 @@
+{   
+    "parentCode":"1",
+    "description": "",
+    "actived": "1",
+    "deleted": "0",
+    "createdDatetime": "CURRENT_TIMESTAMP",
+    "updatedDatetime": "CURRENT_TIMESTAMP",
+    
+    "$":[ "t_brand",
+     {
+            "name": "大众",
+            "shortName":"大众",
+            "level":1,
+            "fullPath":"SDZ",
+            "code":"SDZ",
+            "parentCode":""
+        }, 
+        {
+            "parentCode":"SDZ",
+            "name": "劲情",
+            "shortName":"劲情",
+            "level":2,
+            "fullPath":"SDZ/SDZJQ-",
+            "code":"SDZJQ-",
+            "$": [ "t_vehicle", 
+            	{
+                    "code":"SDZJQ----16L",
+                    "name":"大众 劲情1.6",
+                    "shortName":"劲情1.6",
+                    "emissionVolume":"1.6L"
+                }
+              ]
+        }, 
+        {
+            "parentCode":"SDZ",
+            "name": "朗逸",
+            "shortName":"朗逸",
+            "level":2,
+            "fullPath":"SDZ/SDZLY-",
+            "code":"SDZLY-",
+            "$": [ "t_vehicle", {
+                    "code":"SDZLY----16L",
+                    "name":"大众 朗逸1.6",
+                    "shortName":"朗逸1.6",
+                    "emissionVolume":"1.6L"
+                },{
+                    "code":"SDZLY----20L",
+                    "name":"大众 朗逸2.0",
+                    "shortName":"朗逸2.0",
+                    "emissionVolume":"2.0L"
+                }, {
+                    "code":"SDZLY--SI14T",
+                    "name":"大众 朗逸1.4TSI",
+                    "shortName":"朗逸1.4TSI",
+                    "emissionVolume":"1.4T"
+                },{
+                    "code":"SDZLY--12---",
+                    "name":"大众 2012款以后－朗逸",
+                    "shortName":"2012款以后－朗逸",
+                    "emissionVolume":""
+                }]
+        } 
+    ]
+}
+

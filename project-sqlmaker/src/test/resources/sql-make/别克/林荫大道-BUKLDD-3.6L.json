@@ -1,0 +1,186 @@
+
+{   
+    "vehicleName": "林荫大道-BUKLDD-3.6L",
+    "periodUnit": "km",
+    "fitToEmissionVolume": "*",
+    "maintenanceOwnerCode": "sys",
+    "fitToMinKm": "0",
+    "fitToMaxKm": "10000000",
+    "fitToMinDaysUsed": "0",
+    "fitToMaxDaysUsed": "100000",
+    "fitToCity": "*",
+    "description": "",
+    "actived": "1",
+    "deleted": "0",
+    "createdDatetime": "CURRENT_TIMESTAMP",
+    "updatedDatetime": "CURRENT_TIMESTAMP",
+
+	"fitToVehicleScope": ",BUKLDD---36L,",
+    
+    "minSelected": "1",
+    "maxSelected": "1",
+    "selectMode": "must",
+	"defaultSelected": "true",
+
+	"$":[ "t_basic_maintenance",
+        {
+            "name" : "换机油",
+            "docURL": "introduce1.html",
+            "periodValue": "5000",
+            "laborHour": "2",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "name": "换机油(4L+1L*3)",
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "BUK93736605",
+                            "amount": "3",
+                            "price": "117.00",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "美孚机油(1L)"
+                                }
+                            ]
+                        },{
+                            "sparePartCode": "BUK93736606",
+                            "amount": "1",
+                            "price": "458.00",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "美孚机油(4L)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换机油滤芯",
+            "docURL": "introduce2.html",
+            "periodValue": "5000",
+            "laborHour": "0.5",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "BUK25177917",
+                            "amount": "1",
+                            "price": "110.00",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "机油滤清器总成"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换空气滤芯",
+            "docURL": "introduce3.html",
+            "periodValue": "10000",
+            "laborHour": "0.5",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "BUK92066873",
+                            "amount": "1",
+                            "price": "390.00",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "空气滤芯"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换空调滤芯",
+            "docURL": "introduce4.html",
+            "periodValue": "10000",
+            "laborHour": "0.5",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "BUK92184248",
+                            "amount": "1",
+                            "price": "156.00",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "空调滤清器滤芯"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换转向助力液",
+            "docURL": "introduce6.html",
+            "periodValue": "50000",
+            "laborHour": "2",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "BUK93735412",
+                            "amount": "1",
+                            "price": "51.00",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "动力转向液"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换火花塞",
+            "docURL": "introduce7.html",
+            "periodValue": "30000",
+            "laborHour": "2",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "BUK12597464",
+                            "amount": "6",
+                            "price": "104.00",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "火花塞"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换变速箱油",
+            "docURL": "introduce8.html",
+            "periodValue": "80000",
+            "laborHour": "2",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "BUK93735413",
+                            "amount": "2",
+                            "price": "198.00",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "自动变速箱传动液"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

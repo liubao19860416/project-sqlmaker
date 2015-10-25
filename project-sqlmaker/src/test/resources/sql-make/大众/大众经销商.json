@@ -1,0 +1,6 @@
+{
+    "$":[ "sdz.sql",
+         { "dealerCode": "225" }
+        ,{ "dealerCode": "1707" }
+    ]
+}

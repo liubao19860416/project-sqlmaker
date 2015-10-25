@@ -1,0 +1,41 @@
+{   
+    "code": "UPPER(REPLACE(UUID(),'-',''))",
+    "name": "保养券",
+    "moneyAmount": "50",
+    "color1": "#BFFEA9",
+    "color2": "#6CB153",
+    "ruleBrief": "保养券简介ruleBrief",
+    "ruleDetail": "保养券详介ruleDetail",
+    "validInDays": "10",
+    "description": "保养券描述description",
+    
+    "fitToMaxKm": "10000000",
+    "fitToMinKm": "0",
+    "fitToMaxDaysUsed": "100000",
+    "fitToMinDaysUsed": "0",
+    "fitToEmissionVolume": "*",
+    "fitToVehicleScope": "*",
+    "fitToCity": "*",
+    
+    "beginDatetime": "CURRENT_TIMESTAMP",
+    "endDatetime": "CURRENT_TIMESTAMP",
+    "createdDatetime": "CURRENT_TIMESTAMP",
+    "updatedDatetime": "CURRENT_TIMESTAMP",
+    "actived": "1",
+    "deleted": "0",
+
+    "$":[ "t_coupon",
+        {
+            "name" : "新手券",
+            //"code": "1234567890",
+		    "moneyAmount": "200",
+		    "color1": "#BFFEA1",
+		    "color2": "#6CB151",
+		    "ruleBrief": "新手券简介",
+		    "ruleDetail": "新手券详介",
+		    "validInDays": "100",
+		    "description": "新手券描述"
+        }
+    ]
+}
+

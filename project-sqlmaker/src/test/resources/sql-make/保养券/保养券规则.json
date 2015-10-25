@@ -1,0 +1,34 @@
+{   
+    "name": "保养代金券",
+    "moneyAmount": "50",
+    "color1": "#bffea9",
+    "color2": "#6CB153",
+    "ruleBrief": "50元保养代金券",
+    "ruleDetail": "车主凭保养券券码，通过保养管家下单到店保养享50元抵扣。",
+    "validInDays": "0",
+    "description": "保养管家2015年2月底用户调研保养券规则",
+    
+    "fitToMaxKm": "10000000",
+    "fitToMinKm": "0",
+    "fitToMaxDaysUsed": "100000",
+    "fitToMinDaysUsed": "0",
+    "fitToEmissionVolume": "*",
+    "fitToVehicleScope": ",BUK,CAD,XFL,MG-,RW-,",
+    "fitToCity": ",310100,",
+    "useKmValue": "-1",
+    "typeCode": "2",
+    "ruleString": "",
+    
+    "beginDatetime": "2015-06-01 00:00:00",
+    "endDatetime": "2015-12-31 23:59:59",
+    "createdDatetime": "2015-01-01 00:00:00",
+    "updatedDatetime": "2015-01-01 00:00:00",
+    "actived": "1",
+    "deleted": "0",
+
+    "$":[ "t_coupon",
+        {
+        }
+    ]
+}
+

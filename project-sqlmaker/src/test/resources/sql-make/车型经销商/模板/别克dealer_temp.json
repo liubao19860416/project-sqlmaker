@@ -1,0 +1,12 @@
+{   
+    "description": "",
+    "actived": "1",
+    "deleted": "0",
+    "createdDatetime": "CURRENT_TIMESTAMP",
+    "updatedDatetime": "CURRENT_TIMESTAMP",
+        "$":[ "t_dealer_vehicle_temp",
+             {"vehicleCode":"BUKAKW---20T"}, 
+             {"vehicleCode":"BUKLDD---36L"},
+             {"vehicleCode":"BUKYL----18L"}
+         ]
+  }

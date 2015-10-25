@@ -1,0 +1,247 @@
+
+{   
+    "vehicleName": "劲情-SDZJQ 1.6",
+    "periodUnit": "km",
+    "fitToEmissionVolume": "*",
+    "maintenanceOwnerCode": "sys",
+    "fitToMinKm": "0",
+    "fitToMaxKm": "10000000",
+    "fitToMinDaysUsed": "0",
+    "fitToMaxDaysUsed": "100000",
+    "fitToCity": "*",
+    "description": "",
+    "actived": "1",
+    "deleted": "0",
+    "createdDatetime": "CURRENT_TIMESTAMP",
+    "updatedDatetime": "CURRENT_TIMESTAMP",
+
+	"fitToVehicleScope": ",SDZJQ----16L,",
+    
+    "minSelected": "1",
+    "maxSelected": "1",
+    "selectMode": "must",
+	"defaultSelected": "true",
+
+	"$":[ "t_basic_maintenance",
+        {
+            "name" : "换机油",
+            "docURL": "introduce1.html",
+            "periodValue": "5000",
+            "laborHour": "2.5",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "name": "换机油(4L)",
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZGCN000600D4",
+                            "amount": "1",
+                            "price": "118.62",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "普通机油(4L)"
+                                }
+                            ]
+                        }
+                    ]
+                },{
+                    "name": "换机油(4L)",
+					"defaultSelected": "false",
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZGCE052195Z4",
+                            "amount": "1",
+                            "price": "448.00",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "嘉实多全合成机油(4L)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换机油滤芯",
+            "docURL": "introduce2.html",
+            "periodValue": "5000",
+            "laborHour": "0.5",
+            "$": [ "t_basic_spare_part_group", 
+                {
+					"name": "机油滤清器(铁)",
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZ03C115561B",
+                            "amount": "1",
+                            "price": "88.50",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "机油滤清器(铁)"
+                                }
+                            ]
+                        }
+                    ]
+                },{
+					"name": "机油滤清器(纸)",
+					"defaultSelected": "false",
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZ03C115562A",
+                            "amount": "1",
+                            "price": "63.88",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "机油滤清器(纸)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换空气滤芯",
+            "docURL": "introduce3.html",
+            "periodValue": "10000",
+            "laborHour": "1",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZ03C129620F",
+                            "amount": "1",
+                            "price": "68.45",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "滤芯"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换空调滤芯",
+            "docURL": "introduce4.html",
+            "periodValue": "10000",
+            "laborHour": "1",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZ6Q0819653",
+                            "amount": "1",
+                            "price": "78.51",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "空调滤清器滤芯"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换燃油滤芯",
+            "docURL": "introduce5.html",
+            "periodValue": "25000",
+            "laborHour": "1.5",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZ6Q0201051J",
+                            "amount": "1",
+                            "price": "110.39",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "滤清器总成"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换火花塞",
+            "docURL": "introduce7.html",
+            "periodValue": "20000",
+            "laborHour": "4",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZ101905601B",
+                            "amount": "4",
+                            "price": "47.15",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "火花塞"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换变速箱油",
+            "docURL": "introduce8.html",
+            "periodValue": "35000",
+            "laborHour": "7.5",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZGCN055025Z2(1L)",
+                            "amount": "6",
+                            "price": "200.32",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "自动变速箱传动液(1L)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name" : "更换正时皮带及涨紧器",
+            "docURL": "introduce9.html",
+            "periodValue": "40000",
+            "laborHour": "38",
+            "$": [ "t_basic_spare_part_group", 
+                {
+                    "$": [ "t_basic_spare_part_grouped", 
+                        {
+                            "sparePartCode": "SDZ03C109507M",
+                            "amount": "1",
+                            "price": "89.36",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "正时皮带及涨紧器"
+                                }
+                            ]
+                        },{
+                            "sparePartCode": "SDZ1JD260849C",
+                            "amount": "1",
+                            "price": "114.08",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "正时皮带及涨紧器"
+                                }
+                            ]
+                        },{
+                            "sparePartCode": "SDZ1JD145299A",
+                            "amount": "1",
+                            "price": "114.08",
+                            "$": [ "t_basic_spare_part", 
+                                {
+                                    "name": "正时皮带及涨紧器"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

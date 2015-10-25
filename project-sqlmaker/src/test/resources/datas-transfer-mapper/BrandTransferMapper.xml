@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="datas.transfer.BrandTransferMapper">
+
+    <insert id="insertBrands" parameterType="map">
+        insert into t_brand
+              ( id,   code,      name,    level,      parentCode, fullPath,        description,    actived, deleted, createdDatetime,    updatedDatetime)
+        values( 6,    'RW-',     '荣威',     1,          null,       'RW-',          '荣威',         1,       0,      #{createdDatetime},   #{updatedDatetime} ),
+              ( 7,    'MG-',     'MG',       1,          null,       'MG-',          'MG',           1,       0,      #{createdDatetime},   #{updatedDatetime} ),
+              ( 1,    'RW-350',  '荣威350',  2,          'RW-',      'RW-/RW-350',   '荣威350系列',   1,       0,      #{createdDatetime},   #{updatedDatetime} ),
+              ( 2,    'RW-550',  '荣威550',  2,         'RW-',      'RW-/RW-550',   '荣威550系列',   1,       0,      #{createdDatetime},   #{updatedDatetime} ),
+              ( 3,    'RW-W5-',  '荣威W5',   2,         'RW-',      'RW-/RW-W5-',   '荣威W5系列',    1,       0,      #{createdDatetime},   #{updatedDatetime} ),
+              ( 4,    'RW-750',  '荣威750',  2,         'RW-',      'RW-/RW-750',   '荣威750系列',   1,       0,      #{createdDatetime},   #{updatedDatetime} ),
+              ( 5,    'RW-950',  '荣威950',  2,         'RW-',      'RW-/RW-950',   '荣威950系列',   1,       0,      #{createdDatetime},   #{updatedDatetime} );
+        
+    </insert>
+    
+</mapper> 

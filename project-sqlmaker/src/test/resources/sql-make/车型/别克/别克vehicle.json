@@ -1,0 +1,66 @@
+{   
+    "parentCode":"1",
+    "description": "",
+    "actived": "1",
+    "deleted": "0",
+    "createdDatetime": "CURRENT_TIMESTAMP",
+    "updatedDatetime": "CURRENT_TIMESTAMP",
+
+    "$":[ "t_brand",
+     {
+            "name": "别克",
+            "shortName":"别克",
+            "level":1,
+            "fullPath":"BUK",
+            "code":"BUK",
+            "parentCode":""
+        }, 
+        {
+            "parentCode":"BUK",
+            "name": "英朗",
+            "shortName":"英朗",
+            "level":2,
+            "fullPath":"BUK/BUKYL-",
+            "code":"BUKYL-",
+            "$": [ "t_vehicle", {
+                    "code":"BUKYL----18L",
+                    "name":"别克 英朗 1.8L",
+                    "shortName":"英朗 1.8L",
+                    "emissionVolume":"1.8L"
+                }
+              ]
+        }, 
+        {
+            "parentCode":"BUK",
+            "name": "林荫大道",
+            "shortName":"林荫大道",
+            "level":2,
+            "fullPath":"BUK/BUKLDD",
+            "code":"BUKLDD",
+            "$": [ "t_vehicle", 
+            {
+                    "code":"BUKLDD---36L",
+                    "name":"别克 林荫大道 3.6L",
+                    "shortName":"林荫大道 3.6L",
+                    "emissionVolume":"3.6L"
+                }
+             ]
+        }, 
+        {
+            "parentCode":"BUK",
+            "name": "昂科威",
+            "shortName":"昂科威",
+            "level":2,
+            "fullPath":"BUK/BUKAKW",
+            "code":"BUKAKW",
+            "$": [ "t_vehicle", {
+                    "code":"BUKAKW---20T",
+                    "name":"别克 昂科威 2.0T",
+                    "shortName":"昂科威 2.0T",
+                    "emissionVolume":"2.0T"
+                }
+              ]
+        }
+    ]
+}
+

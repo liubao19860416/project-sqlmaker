@@ -1,0 +1,1 @@
+UPDATE t_user_coupon SET useDatetime='${useDatetime}' where verifyCode='${verifyCode}' and status='3';

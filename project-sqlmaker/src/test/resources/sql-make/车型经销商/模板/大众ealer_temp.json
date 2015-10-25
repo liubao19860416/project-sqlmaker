@@ -1,0 +1,14 @@
+{   
+    "description": "",
+    "actived": "1",
+    "deleted": "0",
+    "createdDatetime": "CURRENT_TIMESTAMP",
+    "updatedDatetime": "CURRENT_TIMESTAMP",
+        "$":[ "t_dealer_vehicle_temp",
+             {"vehicleCode":"SDZJQ----16L"},
+             {"vehicleCode":"SDZLY----16L"}, 
+             {"vehicleCode":"SDZLY----20L"},
+             {"vehicleCode":"SDZLY--12---"}, 
+             {"vehicleCode":"SDZLY--SI14T"}
+         ]
+  }

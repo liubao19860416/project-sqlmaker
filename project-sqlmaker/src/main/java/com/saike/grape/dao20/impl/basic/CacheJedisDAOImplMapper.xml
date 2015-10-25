@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.saike.grape.dao20.impl.basic.CacheJedisDAOImplMapper">
+ 
+    <select id="selectByCodeAndKey" resultType="cacheJedis" parameterType="map">
+        select * 
+        from 
+        t_cache_jedis 
+         where
+          `code`=#{code} and deviceId=#{deviceId} 
+         and actived = true and deleted = false;
+    </select>
+    
+    <update id="updateByCodeAndKey" parameterType="map">
+        update t_cache_jedis set value=#{value} where
+          `code`=#{code} and deviceId=#{deviceId} 
+    </update>
+
+</mapper> 
